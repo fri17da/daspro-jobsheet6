@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Pemilihan2Percobaan223 {
+public class Pemilihan2Percobaan2modifikasi1 {
     public static void main(String[] args) {
         Scanner input23 = new Scanner(System.in);
 
@@ -20,6 +20,8 @@ public class Pemilihan2Percobaan223 {
         input23.nextLine();
         System.out.print("Apakah punya member (y/n) ? = ");
         member = input23.nextLine();
+        System.out.print("Metode pembayaran (qris/cash) = ");
+        payment_metode = input23.nextLine();
         System.out.println("------------------------------------------");
 
         if (member.equalsIgnoreCase("y")) {
@@ -65,7 +67,14 @@ public class Pemilihan2Percobaan223 {
         } else {
             System.out.println("Member tidak valid");
         }
-       
+        double final_payment = 0;
+        if (payment_metode.equalsIgnoreCase("qris")) {
+            final_payment = harga - 1000;
+        } else {
+            final_payment = harga;
+        }
+        System.out.println("Total Bayar : " + final_payment);
+        System.out.println("Metode Bayar : " + payment_metode);
         System.out.println("-----------------------------------------");
         
     }
