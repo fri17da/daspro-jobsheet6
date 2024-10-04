@@ -13,24 +13,24 @@ public class Pemilihan2Tugas323 {
         System.out.print("Masukkan ukuran sepatu: ");
         ukuran = sc.nextInt();
 
-        if (merk.equals("Converse")) {
-            if (kategori.equals("Slip on") && (ukuran >= 36 && ukuran <= 40)) {
+        if (merk.equalsIgnoreCase("Converse")) {
+            if (kategori.equalsIgnoreCase("Slip on") && (ukuran >= 36 && ukuran <= 40)) {
                 harga = 800000;
-            } else if (kategori.equals("High top") && (ukuran >= 40 && ukuran <= 44)) {
+            } else if (kategori.equalsIgnoreCase("High top") && (ukuran >= 40 && ukuran <= 44)) {
                 harga = 1200000;
-        } else if (merk.equals("Sketcher")) {
-             if (kategori.equals("Woman") && (ukuran >= 36 && ukuran <= 41)) {
+        } else if (merk.equalsIgnoreCase("Sketcher")) {
+             if (kategori.equalsIgnoreCase("Woman") && (ukuran >= 36 && ukuran <= 41)) {
                 harga = 1000000;
                 
-        } else if (kategori.equals("Man") && (ukuran >= 41 && ukuran <= 44)) {
+        } else if (kategori.equalsIgnoreCase("Man") && (ukuran >= 41 && ukuran <= 44)) {
                 harga = 1800000;
         }
     }
                
-        } else if (merk.equals("Nike")) {
-            if (kategori.equals("Kids") && (ukuran >= 36 && ukuran <= 40)) {
+        } else if (merk.equalsIgnoreCase("Nike")) {
+            if (kategori.equalsIgnoreCase("Kids") && (ukuran >= 36 && ukuran <= 40)) {
                 harga = 750000;
-            } else if (kategori.equals("Adult") && (ukuran >= 40 && ukuran <= 44)) {
+            } else if (kategori.equalsIgnoreCase("Adult") && (ukuran >= 40 && ukuran <= 44)) {
                 harga = 1500000;
             }
         }
